@@ -4,7 +4,13 @@ const Tuning = {
   setTuning(tuning) {
     this.standarTunning = tuning;
     this.numberOfStrings = tuning.length
+  },
+  getTuning() {
+    return this.standarTunning;
+  },
+  get() {
+    return this;
   }
-  
+
 }
 export default Tuning;

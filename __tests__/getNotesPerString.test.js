@@ -1,8 +1,8 @@
 //import {GuitarScale} from 'index';
-import {Tuning} from 'index';
+import {GuitarScale, Tuning, Print} from 'index';
 
 test('Test', () => {
   //let x = GuitarScale.get("G", "ionian", true);
-  Tuning.setTuning(["E", "A", "D", "G"]);
-  console.log(Tuning);
+  
+  Print.print(GuitarScale.get("G", "ionian", Tuning.setTuning(["E", "D", "D", "G"])));
 });
