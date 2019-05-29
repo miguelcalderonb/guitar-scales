@@ -13,7 +13,7 @@ class PrintHtml extends Print {
       numberSpaceAfterTitle: 10,
     }
   }
-  print(GuitarAllStrings, refDivHtml, PrintSegments = null) {
+  print(GuitarAllStrings, PrintSegments = null, idContainer = null) {
     
     let printSegments = PrintSegments;
 
@@ -23,10 +23,25 @@ class PrintHtml extends Print {
 
     let infoPrint = super.getPrintInfo(GuitarAllStrings, printSegments);
 
-    infoPrint.forEach((line) => {
-      console.log(line);
+    let infoHtml = '<div className="guitar-scale-print">';
+    infoPrint.forEach((line, numberLine) => {
+      let className = 'guitar-scale-print-html-string';
+
+      if (numberLine === 0) {
+        className = 'guitar-scale-print-html-first-line'
+      } else if (numberLine === 1) {
+        className = 'guitar-scale-print-html-separator'
+      }
+      infoHtml += '<div class="'+className+'">'+line+'</div>'
     });
+
+    infoHtml += '</div>'
+
+    if (idContainer !== null) {
+      document.getElementById(idContainer).insertAdjacentHTML('beforeend', infoHtml);
+    }
+    return infoHtml;
   }
 }
 
-export default PrintConsoleLog;
+export default PrintHtml;

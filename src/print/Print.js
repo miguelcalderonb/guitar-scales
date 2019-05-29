@@ -61,7 +61,6 @@ class Print {
     return line;
   }
   getString(stringInfo, PrintSegments) {
-
     let lineBeforeStart = '';
     for (let count = 0; count < this.lineSeparatorTitleLength; count++) {
       lineBeforeStart += ' ';
