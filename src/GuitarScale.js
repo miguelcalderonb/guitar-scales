@@ -5,9 +5,13 @@ import Tuning from './Tuning';
 
 const GuitarScale = {
   tuning: Tuning.get(),
-  scaleNames() {
+  getNames() {
     return Scale.names();
   },
+  /**
+   * 
+   * @param {String} noteString 
+   */
   getNotesPerString(noteString) {
     let finalString = [noteString];
 
@@ -17,6 +21,11 @@ const GuitarScale = {
 
     return finalString;
   },
+  /**
+   * 
+   * @param {Array} scale 
+   * @param {Array} stringNotes 
+   */
   getScalePerString(scale, stringNotes) {
     let scaleString = [];
 
