@@ -1,15 +1,14 @@
 {
   "name": "guitar-scales",
   "version": "1.0.0",
-  "description": "",
-  "main": "dist/main.js",
-  "private": true,
+  "description": "guitar-scales is a javascript modular for get guitar scales",
+  "main": "dist/guitar-scales.min.js",
   "scripts": {
     "test": "jest",
     "start": "nodemon --exec babel-node ./src/index.js",
     "watch": "webpack --watch",
     "build": "webpack --config webpack.config.js",
-    "start:prod": "nodemon dist/main.js"
+    "start:prod": "nodemon dist/guitar-scales.min.js"
   },
   "repository": {
     "type" : "git",

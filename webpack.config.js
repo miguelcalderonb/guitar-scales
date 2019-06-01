@@ -3,7 +3,7 @@ const path = require('path');
 module.exports = {
   entry: './src/index.js',
   output: {
-    filename: 'main.js',
+    filename: 'guitar-scales.min.js',
     library: 'GuitarScale',
     libraryTarget: 'umd',
     umdNamedDefine: true,
