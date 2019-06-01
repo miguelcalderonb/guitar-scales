@@ -1,3 +1,6 @@
+/**
+ * Print
+ */
 const Print = {
   spaceBetweenNotes: ' ',
   spaceBeforeStart: '      |',

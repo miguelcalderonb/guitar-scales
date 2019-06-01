@@ -1,3 +1,8 @@
+/**
+ * @memberof Structs
+ * 
+ * @class PrintSegments
+ */
 class PrintSegments {
   constructor(configTemplate) {
     this.charLineSeparator = configTemplate.charLineSeparator;

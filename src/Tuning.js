@@ -1,3 +1,6 @@
+/**
+ * Tunning
+ */
 const Tuning = {
   standarTunning: ["E", "A", "D", "G", "B", "E"],
   numberOfStrings: 6,

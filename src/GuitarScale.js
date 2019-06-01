@@ -2,15 +2,30 @@ import GuitarAllStrings from './structs/GuitarAllStrings';
 import { Scale, Note, transpose } from "tonal";
 import GuitarFretzInfo from './structs/GuitarFretzInfo';
 import Tuning from './Tuning';
+import Structs from './structs/Structs';
 
+/**
+ * Create a new GuitarScale
+ * 
+ * @class GuitarScale
+ * @property {Tuning} tuning
+ */
 const GuitarScale = {
   tuning: Tuning.get(),
+
+  /**
+   * @return {array} The list of supported scales
+   * @example
+   * console.log(GuitarScale.getNames()) //['ionian', 'aeolian', 'minor', '...']
+   */
   getNames() {
     return Scale.names();
   },
   /**
+   * Get the notes per String
    * 
-   * @param {String} noteString 
+   * @param {String}  [noteString=E] - The first note of the string, this note represent the string at 0 fret
+   * @return {array} ["E", "F", "F#", "G", "G#", "A", "A#", "B"] - The notes ordered per fret
    */
   getNotesPerString(noteString) {
     let finalString = [noteString];
@@ -22,6 +37,7 @@ const GuitarScale = {
     return finalString;
   },
   /**
+   * Get specific scale per string
    * 
    * @param {Array} scale 
    * @param {Array} stringNotes 
@@ -43,9 +59,25 @@ const GuitarScale = {
 
     return scaleString;
   },
+  /**
+   * Sets specific tuning to the object
+   * 
+   * @param {*} tuning 
+   */
   setTuning(tuning) {
     this.tuning = tuning;
   },
+  
+  /**
+   * Get the scale that you wants
+   * 
+   * @param {String} note [note=c] The first note for your scale
+   * @param {String} scaleName  [scaleName=ionian] The name of the scale that you wants to get
+   * @param {bool} allNeck - Flag for get all neck or only the half of neck notes
+   * @param {Array} altTuning - [tuning=[D,A,D,G,B,E]] If you want extra tunning you can describe here
+   * 
+   * @return {GuitarAllStrings}  GuitarAllStrings
+   */
   get(note, scaleName, allNeck = false, altTuning = null) {
 
     if (altTuning !== null) {

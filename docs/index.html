@@ -1,0 +1,994 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset='utf-8' />
+  <title>guitar_scales 1.0.0 | Documentation</title>
+  <meta name='viewport' content='width=device-width,initial-scale=1'>
+  <link href='assets/bass.css' rel='stylesheet' />
+  <link href='assets/style.css' rel='stylesheet' />
+  <link href='assets/github.css' rel='stylesheet' />
+  <link href='assets/split.css' rel='stylesheet' />
+</head>
+<body class='documentation m0'>
+    <div class='flex'>
+      <div id='split-left' class='overflow-auto fs0 height-viewport-100'>
+        <div class='py1 px2'>
+          <h3 class='mb0 no-anchor'>guitar_scales</h3>
+          <div class='mb1'><code>1.0.0</code></div>
+          <input
+            placeholder='Filter'
+            id='filter-input'
+            class='col12 block input'
+            type='text' />
+          <div id='toc'>
+            <ul class='list-reset h5 py1-ul'>
+              
+                
+                <li><a
+                  href='#guitarscale'
+                  class=" toggle-sibling">
+                  GuitarScale
+                  <span class='icon'>▸</span>
+                </a>
+                
+                <div class='toggle-target display-none'>
+                  
+                  <ul class='list-reset py1-ul pl1'>
+                    <li class='h5'><span>Static members</span></li>
+                    
+                      <li><a
+                        href='#guitarscalegetnames'
+                        class='regular pre-open'>
+                        .getNames
+                      </a></li>
+                    
+                      <li><a
+                        href='#guitarscalegetnotesperstring'
+                        class='regular pre-open'>
+                        .getNotesPerString
+                      </a></li>
+                    
+                      <li><a
+                        href='#guitarscalegetscaleperstring'
+                        class='regular pre-open'>
+                        .getScalePerString
+                      </a></li>
+                    
+                      <li><a
+                        href='#guitarscalesettuning'
+                        class='regular pre-open'>
+                        .setTuning
+                      </a></li>
+                    
+                      <li><a
+                        href='#guitarscaleget'
+                        class='regular pre-open'>
+                        .get
+                      </a></li>
+                    
+                    </ul>
+                  
+                  
+                  
+                  
+                </div>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#print'
+                  class="">
+                  Print
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#structs'
+                  class=" toggle-sibling">
+                  Structs
+                  <span class='icon'>▸</span>
+                </a>
+                
+                <div class='toggle-target display-none'>
+                  
+                  <ul class='list-reset py1-ul pl1'>
+                    <li class='h5'><span>Static members</span></li>
+                    
+                      <li><a
+                        href='#structsguitarallstrings'
+                        class='regular pre-open'>
+                        .GuitarAllStrings
+                      </a></li>
+                    
+                      <li><a
+                        href='#structsguitarfretzinfo'
+                        class='regular pre-open'>
+                        .GuitarFretzInfo
+                      </a></li>
+                    
+                      <li><a
+                        href='#structsprintsegments'
+                        class='regular pre-open'>
+                        .PrintSegments
+                      </a></li>
+                    
+                    </ul>
+                  
+                  
+                  
+                  
+                </div>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#tuning'
+                  class="">
+                  Tuning
+                  
+                </a>
+                
+                </li>
+              
+            </ul>
+          </div>
+          <div class='mt1 h6 quiet'>
+            <a href='https://documentation.js.org/reading-documentation.html'>Need help reading this?</a>
+          </div>
+        </div>
+      </div>
+      <div id='split-right' class='relative overflow-auto height-viewport-100'>
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='guitarscale'>
+      GuitarScale
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Create a new GuitarScale</p>
+
+    <div class='pre p1 fill-light mt0'>new GuitarScale()</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Properties</div>
+    <div>
+      
+        <div class='space-bottom0'>
+          <span class='code bold'>tuning</span> <code class='quiet'>(<a href="#tuning">Tuning</a>)</code>
+          
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Static Members</div>
+    <div class="clearfix">
+  
+    <div class='border-bottom' id='guitarscalegetnames'>
+      <div class="clearfix small pointer toggle-sibling">
+        <div class="py1 contain">
+            <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+            <span class='code strong strong truncate'>getNames()</span>
+        </div>
+      </div>
+      <div class="clearfix display-none toggle-target">
+        <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+
+  
+    <div class='pre p1 fill-light mt0'>getNames(): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">array</a></div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">array</a></code>:
+        The list of supported scales
+
+      
+    
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Example</div>
+    
+      
+      <pre class='p1 overflow-auto round fill-light'><span class="hljs-built_in">console</span>.log(GuitarScale.getNames()) <span class="hljs-comment">//['ionian', 'aeolian', 'minor', '...']</span></pre>
+    
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+      </div>
+    </div>
+  
+    <div class='border-bottom' id='guitarscalegetnotesperstring'>
+      <div class="clearfix small pointer toggle-sibling">
+        <div class="py1 contain">
+            <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+            <span class='code strong strong truncate'>getNotesPerString(noteString)</span>
+        </div>
+      </div>
+      <div class="clearfix display-none toggle-target">
+        <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+
+  <p>Get the notes per String</p>
+
+    <div class='pre p1 fill-light mt0'>getNotesPerString(noteString: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">array</a></div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>noteString</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+            = <code>E</code>)</code>
+	    The first note of the string, this note represent the string at 0 fret
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">array</a></code>:
+        ["E", "F", "F#", "G", "G#", "A", "A#", "B"]
+ - The notes ordered per fret
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+      </div>
+    </div>
+  
+    <div class='border-bottom' id='guitarscalegetscaleperstring'>
+      <div class="clearfix small pointer toggle-sibling">
+        <div class="py1 contain">
+            <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+            <span class='code strong strong truncate'>getScalePerString(scale, stringNotes)</span>
+        </div>
+      </div>
+      <div class="clearfix display-none toggle-target">
+        <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+
+  <p>Get specific scale per string</p>
+
+    <div class='pre p1 fill-light mt0'>getScalePerString(scale: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>, stringNotes: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>)</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>scale</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>)</code>
+	    
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>stringNotes</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>)</code>
+	    
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+      </div>
+    </div>
+  
+    <div class='border-bottom' id='guitarscalesettuning'>
+      <div class="clearfix small pointer toggle-sibling">
+        <div class="py1 contain">
+            <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+            <span class='code strong strong truncate'>setTuning(tuning)</span>
+        </div>
+      </div>
+      <div class="clearfix display-none toggle-target">
+        <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+
+  <p>Sets specific tuning to the object</p>
+
+    <div class='pre p1 fill-light mt0'>setTuning(tuning: any)</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>tuning</span> <code class='quiet'>(any)</code>
+	    
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+      </div>
+    </div>
+  
+    <div class='border-bottom' id='guitarscaleget'>
+      <div class="clearfix small pointer toggle-sibling">
+        <div class="py1 contain">
+            <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+            <span class='code strong strong truncate'>get(note, scaleName, allNeck, altTuning)</span>
+        </div>
+      </div>
+      <div class="clearfix display-none toggle-target">
+        <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+
+  <p>Get the scale that you wants</p>
+
+    <div class='pre p1 fill-light mt0'>get(note: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>, scaleName: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>, allNeck: bool, altTuning: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>): GuitarAllStrings</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>note</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>)</code>
+	    [note=c]
+ The first note for your scale
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>scaleName</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>)</code>
+	    [scaleName=ionian]
+ The name of the scale that you wants to get
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>allNeck</span> <code class='quiet'>(bool
+            = <code>false</code>)</code>
+	    Flag for get all neck or only the half of neck notes
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>altTuning</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>
+            = <code>null</code>)</code>
+	    [tuning=
+[D,A,D,G,B,E]
+] If you want extra tunning you can describe here
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>GuitarAllStrings</code>:
+        GuitarAllStrings
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+      </div>
+    </div>
+  
+</div>
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='print'>
+      Print
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Print</p>
+
+    <div class='pre p1 fill-light mt0'>Print</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='structs'>
+      Structs
+    </h3>
+    
+    
+  </div>
+  
+
+  
+    <div class='pre p1 fill-light mt0'>Structs</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Static Members</div>
+    <div class="clearfix">
+  
+    <div class='border-bottom' id='structsguitarallstrings'>
+      <div class="clearfix small pointer toggle-sibling">
+        <div class="py1 contain">
+            <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+            <span class='code strong strong truncate'>GuitarAllStrings</span>
+        </div>
+      </div>
+      <div class="clearfix display-none toggle-target">
+        <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+
+  <p>GuitarAllString</p>
+
+    <div class='pre p1 fill-light mt0'>GuitarAllStrings</div>
+  
+    <p>
+      Type:
+      <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>
+    </p>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Properties</div>
+    <div>
+      
+        <div class='space-bottom0'>
+          <span class='code bold'>info</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+          
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <span class='code bold'>Tuning</span> <code class='quiet'>(<a href="#tuning">Tuning</a>)</code>
+          
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+      </div>
+    </div>
+  
+    <div class='border-bottom' id='structsguitarfretzinfo'>
+      <div class="clearfix small pointer toggle-sibling">
+        <div class="py1 contain">
+            <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+            <span class='code strong strong truncate'>new GuitarFretzInfo()</span>
+        </div>
+      </div>
+      <div class="clearfix display-none toggle-target">
+        <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+
+  <p>GuitarFretzInfo</p>
+
+    <div class='pre p1 fill-light mt0'>new GuitarFretzInfo()</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Instance Members</div>
+    <div class="clearfix">
+  
+    <div class='border-bottom' id='structsguitarfretzinfoget'>
+      <div class="clearfix small pointer toggle-sibling">
+        <div class="py1 contain">
+            <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+            <span class='code strong strong truncate'>get(note, noteEnharmonic, freet, isPartOfScale, scalePosition)</span>
+        </div>
+      </div>
+      <div class="clearfix display-none toggle-target">
+        <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+
+  
+    <div class='pre p1 fill-light mt0'>get(note: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, noteEnharmonic: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>, freet: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>, isPartOfScale: bool, scalePosition: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>note</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+	    Note
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>noteEnharmonic</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>)</code>
+	    Note Enharmonic
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>freet</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>)</code>
+	    Freet Number
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>isPartOfScale</span> <code class='quiet'>(bool
+            = <code>false</code>)</code>
+	    Flag for identify if the fret is part of the scale
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>scalePosition</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a>
+            = <code>null</code>)</code>
+	    Interval value in the sc
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+      </div>
+    </div>
+  
+</div>
+
+  
+
+  
+
+  
+</section>
+
+      </div>
+    </div>
+  
+    <div class='border-bottom' id='structsprintsegments'>
+      <div class="clearfix small pointer toggle-sibling">
+        <div class="py1 contain">
+            <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+            <span class='code strong strong truncate'>new PrintSegments()</span>
+        </div>
+      </div>
+      <div class="clearfix display-none toggle-target">
+        <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+
+  
+    <div class='pre p1 fill-light mt0'>new PrintSegments()</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+      </div>
+    </div>
+  
+</div>
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='tuning'>
+      Tuning
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Tunning</p>
+
+    <div class='pre p1 fill-light mt0'>Tuning</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+      </div>
+    </div>
+  <script src='assets/anchor.js'></script>
+  <script src='assets/split.js'></script>
+  <script src='assets/site.js'></script>
+</body>
+</html>
