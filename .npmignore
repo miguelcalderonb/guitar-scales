@@ -1,0 +1,7 @@
+__tests__/*
+docs/*
+node_modules/*
+src/*
+.gitignore
+webpack.config.js
+package-lock.json

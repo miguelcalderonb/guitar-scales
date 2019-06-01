@@ -6,4 +6,4 @@ import PrintHtml from './print/PrintHtml';
 import GuitarScale from './GuitarScale';
 import PrintSegments from './structs/PrintSegments';
 
-export { GuitarScale, Tuning, PrintConsoleLog, PrintHtml, Print, PrintSegments };
+export { GuitarScale, Tuning, PrintConsoleLog, PrintHtml, Print, PrintSegments }

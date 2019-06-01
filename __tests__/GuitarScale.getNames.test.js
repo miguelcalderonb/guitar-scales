@@ -1,6 +1,7 @@
 import {GuitarScale} from 'index';
 
 test('Number of names', () => {
+  console.log(GuitarScale);
   let names = GuitarScale.getNames()
   expect(names.length).toBe(91)
 });

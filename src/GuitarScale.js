@@ -2,7 +2,6 @@ import GuitarAllStrings from './structs/GuitarAllStrings';
 import { Scale, Note, transpose } from "tonal";
 import GuitarFretzInfo from './structs/GuitarFretzInfo';
 import Tuning from './Tuning';
-import Structs from './structs/Structs';
 
 /**
  * Create a new GuitarScale
@@ -79,7 +78,6 @@ const GuitarScale = {
    * @return {GuitarAllStrings}  GuitarAllStrings
    */
   get(note, scaleName, allNeck = false, altTuning = null) {
-
     if (altTuning !== null) {
       this.setTuning = altTuning;
     }

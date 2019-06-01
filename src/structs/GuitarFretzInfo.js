@@ -14,7 +14,7 @@ class GuitarFretzInfo {
    * @param {bool} isPartOfScale Flag for identify if the fret is part of the scale
    * @param {number} scalePosition Interval value in the sc
    */
-  get(note, noteEnharmonic, freet, isPartOfScale = false, scalePosition = null) {
+  static get(note, noteEnharmonic, freet, isPartOfScale = false, scalePosition = null) {
     return {
       note: note,
       noteEnharmonic: noteEnharmonic,

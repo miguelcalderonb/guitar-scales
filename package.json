@@ -1,8 +1,9 @@
 {
-  "name": "guitar_scales",
+  "name": "guitar-scales",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/main.js",
+  "private": true,
   "scripts": {
     "test": "jest",
     "start": "nodemon --exec babel-node ./src/index.js",
@@ -59,7 +60,7 @@
       "node_modules"
     ]
   },
-  "author": "",
+  "author": "miguelcalderonbproject@gmail.com",
   "license": "MIT",
   "dependencies": {
     "tonal": "^2.2.2"
