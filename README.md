@@ -4,7 +4,7 @@
 
 #### [Demo]()
 
-#### [API documentation](http://miguelcalderonbproject.github.io/guitar-scales)
+#### [API documentation](https://miguelcalderonb.github.io/guitar-scales/)
 
 ## Examples
 
