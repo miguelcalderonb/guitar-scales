@@ -11,6 +11,10 @@
     "build": "webpack --config webpack.config.js",
     "start:prod": "nodemon dist/main.js"
   },
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/miguelcalderonb/guitar-scales"
+  },
   "babel": {
     "env": {
       "test": {
