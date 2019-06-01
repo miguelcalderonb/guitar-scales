@@ -11,7 +11,15 @@
 Basic usage:
 
 ```js
-import {GuitarScales} from 'GuitarScales'
+import {GuitarScale} from 'GuitarScales'
 
 let scaleInfo = GuitarScale.get("G", "ionian"); // {info: [ { note: C#, noteEnharmonic: Db, freet: 0, isPartOfScale: false, scalePosition: 1 }, {...}, ]
+```
+
+Browser (use the `GuitarScale` global object):
+
+```html
+<script>
+  console.log(GuitarScale.GuitarScale.get("G", "ionian");
+</script>
 ```
