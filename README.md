@@ -2,7 +2,6 @@
 
 `guitar-scales` is a javascript modular for get guitar scales. It provides functions to get the scale in differents tones and with the intervals in each strings, also provides a support for diferents tunings, thats include instuments with any number of strings (guitar and bass).
 
-#### [Demo]()
 
 #### [API documentation](https://miguelcalderonb.github.io/guitar-scales/)
 
@@ -101,7 +100,7 @@ Github Revision - grab the minified file [here](https://github.com/miguelcaldero
 <script src="https://unpkg.com/guitar-scales@1.0.0/dist/guitar-scales.min.js"></script>
 ```
 
-##Thanks
+## Thanks
 
 This library use Tonal Library for all the music theory, thanks for that!
 -Tonal library: https://github.com/danigb/tonal
